@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gy3h
+  namespace: rorai-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:14476c7d18cb98c10c9459579b3057cf45533f5b3ca2390297ef281e313b73fc
+        name: my-nodejs
+        resources: {}
+status: {}
